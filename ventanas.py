@@ -40,13 +40,13 @@ class VentanaPrincipal ( wx.Frame ):
 		self.campoIP.SetMaxLength( 0 )
 		self.campoIP.SetBackgroundColour( wx.Colour( 230, 230, 229 ) )
 
-		direccionyPuerto.Add( self.campoIP, 0, wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
+		direccionyPuerto.Add( self.campoIP, 0, wx.ALL, 5 )
 
 		self.campoPuerto = wx.TextCtrl( self, wx.ID_ANY, u"Puerto", wx.DefaultPosition, wx.Size( 100,-1 ), 0 )
 		self.campoPuerto.SetMaxLength( 0 )
 		self.campoPuerto.SetBackgroundColour( wx.Colour( 230, 230, 229 ) )
 
-		direccionyPuerto.Add( self.campoPuerto, 0, wx.ALL|wx.ALIGN_CENTER_HORIZONTAL, 5 )
+		direccionyPuerto.Add( self.campoPuerto, 0, wx.ALL, 5 )
 
 
 		Cuadricula.Add( direccionyPuerto, 1, wx.ALIGN_CENTER, 5 )
@@ -59,7 +59,7 @@ class VentanaPrincipal ( wx.Frame ):
 		self.botonPlay = wx.BitmapButton( self, wx.ID_ANY, wx.NullBitmap, wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW|0|wx.BORDER_NONE )
 
 		self.botonPlay.SetBitmap( wx.Bitmap( u"play-circle.png", wx.BITMAP_TYPE_ANY ) )
-		Cuadricula.Add( self.botonPlay, 0, wx.ALIGN_CENTER|wx.ALL, 5 )
+		Cuadricula.Add( self.botonPlay, 0, wx.ALL, 5 )
 
 
 		self.SetSizer( Cuadricula )
